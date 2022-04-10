@@ -1,0 +1,8 @@
+@use "global" as *;
+.outside {
+  width: 100%;
+  @include mq(md) {
+  }
+  @include mq(xl) {
+  }
+}
