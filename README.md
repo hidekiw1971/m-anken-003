@@ -4,7 +4,7 @@
 
 ## 概要
 
-- ｘｘｘ
+- codepus 模擬案件（overview）
 - https://www.notion.so/000_web-component-index-c4b399010bf342e9b4e2ed516cf9c730
 
 ## 仕様
@@ -21,7 +21,7 @@
 ## 使い方
 
 - 「copy start」から「copy end」をコピペ。
-- css: src -> module -> xxx をコピペ。
+- css: src -> module -> `overview`、`button` をコピペ。
 
 ## w3c html チェック結果
 
@@ -33,8 +33,7 @@
 
 ## portfolio url:
 
-- https://c-0000.wtb.cfbx.jp/
-- https://css-md-0000.wtb.cfbx.jp/
+- https://c-0051.wtb.cfbx.jp/
 
 ## 参考にしたサイト
 
@@ -42,6 +41,7 @@
 
 ## 更新履歴
 
+- 2022/4/11 `overview`完成（sp、pc）
 - 2022/4/11 `overview__contents--inner` の設定中
 
 ## 環境・使い方

@@ -176,20 +176,196 @@ select::-ms-expand {
 .outside {
   width: 100%;
 }
+.btn {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 20px;
+  font-size: 1.25rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
+  line-height: 1.45;
+  border: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  max-width: 360px;
+  width: 100%;
+  height: 60px;
+  font-size: 1.5em;
+  color: #fff;
+  background: #333;
+  overflow: hidden;
+  border: solid 1px #fff;
+}
+@media screen and (min-width: 768px) {
+  .btn {
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.125rem;
+    line-height: 3.375;
+  }
+}
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  -webkit-transform: translate3d(-100%, 0, 0);
+          transform: translate3d(-100%, 0, 0);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.btn:hover:before {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+.btn:hover span {
+  position: relative;
+  z-index: 1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #333;
+}
+.overview__content--btn {
+  display: inline-block;
+}
+.overview__content--text {
+  display: inline-block;
+  width: 100%;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
+  line-height: 1.4375;
+  color: #fff;
+  text-align: left;
+  padding-right: 20px;
+  padding-right: 1.25rem;
+  padding-left: 20px;
+  padding-left: 1.25rem;
+  padding-bottom: 16px;
+  padding-bottom: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .overview__content--text {
+    font-size: 1rem;
+    letter-spacing: 0.03125rem;
+    line-height: 2.1875;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    padding-bottom: 3rem;
+  }
+}
+.overview__content--title {
+  display: inline-block;
+  width: 100%;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 20px;
+  font-size: 1.25rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
+  line-height: 1.45;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .overview__content--title {
+    font-size: 1.5625rem;
+    letter-spacing: 0.03125rem;
+    line-height: 0.64;
+    margin-bottom: 3rem;
+    text-align: left;
+  }
+}
+@media screen and (min-width: 768px) {
+  .overview__content {
+    padding: 7.4375rem 18.5625rem 7.4375rem 5.5625rem;
+  }
+}
+.overview__contents--img-inner {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url(/images/overview@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.overview__contents--img {
+  display: block;
+  max-width: 375px;
+  max-width: 23.4375rem;
+  width: 100%;
+  background-color: #f00;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+@media screen and (min-width: 768px) {
+  .overview__contents--img {
+    max-width: 34.8125rem;
+    width: 100%;
+    margin-left: auto;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    -webkit-transform: translate(50%, -50%);
+            transform: translate(50%, -50%);
+  }
+}
+.overview__contents--img::before {
+  content: "";
+  display: block;
+  width: 100%;
+  aspect-ratio: 4/3;
+}
 @media screen and (min-width: 768px) {
   .overview__contents--inner {
     width: 100%;
     background-color: #333;
+    position: relative;
   }
+}
+.overview__contents {
+  text-align: center;
+  padding-bottom: 21px;
+  padding-bottom: 1.3125rem;
 }
 @media screen and (min-width: 768px) {
   .overview__contents {
-    padding-right: 5.625rem;
+    padding-right: 24rem;
+    padding-bottom: 0rem;
+  }
+}
+.overview__contetnt--inner {
+  background-color: #333;
+  padding-top: 24px;
+  padding-top: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .overview__contetnt--inner {
+    padding-top: 0rem;
+    text-align: left;
   }
 }
 .overview__inner {
   width: 100%;
   background-color: #111;
+  padding-top: 48px;
+  padding-top: 3rem;
 }
 .overview__title {
   max-width: 375px;
@@ -205,6 +381,8 @@ select::-ms-expand {
   line-height: 1.45;
   color: #fff;
   text-align: center;
+  position: relative;
+  padding-bottom: 48px;
 }
 @media screen and (min-width: 768px) {
   .overview__title {
@@ -230,18 +408,29 @@ select::-ms-expand {
   letter-spacing: 2px;
   letter-spacing: 0.125rem;
   line-height: 1.44;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, -66%);
+          transform: translate(-50%, -66%);
 }
 @media screen and (min-width: 768px) {
   .overview__title::before {
     font-size: 6.875rem;
     letter-spacing: 0.125rem;
     line-height: 1.4363636;
+    -webkit-transform: translate(-107%, -32%);
+            transform: translate(-107%, -32%);
   }
 }
 .overview {
-  max-width: 1280px;
-  max-width: 80rem;
+  max-width: 375px;
+  max-width: 23.4375rem;
   width: 100%;
   margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .overview {
+    max-width: 80rem;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

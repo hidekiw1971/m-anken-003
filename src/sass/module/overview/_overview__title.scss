@@ -13,6 +13,11 @@
   // decoration
   color: #fff;
   text-align: center;
+  // ajustmente
+  position: relative;
+  // space
+  padding-bottom: 48px;
+
   @include mq(md) {
     // size
     display: inline-block;
@@ -43,12 +48,17 @@
   font-weight: $normal;
   letter-spacing: rem(2);
   line-height: 1.44;
-
+  // ajustment
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -66%);
   @include mq(md) {
     // font
     font-size: rem(110);
     letter-spacing: rem(2);
     line-height: 1.4363636;
+    // ajustment
+    transform: translate(-107%, -32%);
   }
   @include mq(xl) {
   }

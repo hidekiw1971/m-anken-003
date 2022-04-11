@@ -5,6 +5,8 @@
     width: 100%;
     // decoration
     background-color: #333;
+    // ajustment ->
+    position: relative;
   }
   @include mq(xl) {
   }

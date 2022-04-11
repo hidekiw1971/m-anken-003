@@ -1,8 +1,13 @@
 @use "global" as *;
 .overview__contents {
+  // ajustment
+  text-align: center;
+  // space
+  padding-bottom: rem(21);
   @include mq(md) {
     // space
-    padding-right: rem(90);
+    padding-right: rem(384);
+    padding-bottom: rem(0);
   }
   @include mq(xl) {
   }
